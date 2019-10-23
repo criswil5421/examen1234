@@ -6,10 +6,10 @@
     <label>
         Nombre:
         <input type="text" formControlName="nombre" name="nombre" id="nombre" required>
-        <div [hidden]="clienteForm.get('nombre').valid || 
+        <!--<div [hidden]="clienteForm.get('nombre').valid || 
         clienteForm.get('nombre').pristine" class="alert alert-danger">
             Titulo is required
-        </div>
+        </div>-->
     </label>
     <br>
     <label>
@@ -27,6 +27,6 @@
         <input type="text" formControlName="direccion" name="direccion" id="direccion" required>
     </label>
     <br>
-    <button type="submit" [disabled]="!clienteForm.valid">Save</button>
+    <button type="submit" [disabled]="!clienteForm">Save</button>
 </form>
 <p>{{ clienteForm.value | json }}</p>

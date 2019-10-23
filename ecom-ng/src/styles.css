@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+	background-color: black !important;
+}
+header{ 
+	padding-top: 10px;
+}
+.container{
+    margin-top: 2.5% ;
+	background-color: #f3f3f3;
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 0px 0px 25px #33E6FF ;
+}
+
+/*.menu:hover{
+	background-color: #f8f8f8;
+	color: #5aae32 !important;
+}
+
+.nav-menu{
+	margin-left: 27% !important;
+	font-weight: bold;
+}*/

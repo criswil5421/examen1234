@@ -29,7 +29,7 @@ export class CapacitacionFormComponent implements OnInit {
       horas_y_credito: ['', [Validators.required]],
       lugar: ['', [Validators.required]],
       tipo_de_evento: ['', [Validators.required]],
-      id: [''],
+      id: ['', [Validators.required]],
       EgresadoID: ['', [Validators.required]],
       PK_Egresado: ['', [Validators.required]],
     });

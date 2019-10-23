@@ -21,7 +21,7 @@ export class ClienteFormComponent implements OnInit {
   }
   ngOnInit() {
     this.clienteForm = this.formBuild.group({
-      id: [''],
+      id: ['', [Validators.required]],
       nombre: ['', [Validators.required]],
       apellido: ['', [Validators.required]],
       telefono: ['', [Validators.required]],

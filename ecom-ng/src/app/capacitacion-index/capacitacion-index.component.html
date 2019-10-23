@@ -1,12 +1,35 @@
-<p>capacitacion-index works!</p>
-<nav>
-        <a routerLink="/capacitacionform" routerLinkActive="active">New Cliente</a> <br>
+  <nav class="nueva">
+        
+      <button id="botonn" type="button" routerLink="/capacitacionform" class="btn btn-info">NUEVA CAPACITACION</button>
+  </nav>  
+  <table class="table table-hover" *ngFor="let p of list">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">COSTO</th>
+        <th scope="col">ENTIDAD</th>
+        <th scope="col">FECHA</th>
+        <th scope="col">HORAS Y CREDITOS</th>
+        <th scope="col">LUGAR</th>
+        <th scope="col">TIPO DE EVENTO</th>
+        <th scope="col">EGRESADO ID</th>
+        <th scope="col">PK EGRESADO</th>
+      </tr>
       
-      </nav>
-<div *ngFor="let p of list">
-
-    <span>{{ p.costo }}</span>
-    <span>{{ p.entidad }}</span>
-    <span><a routerLink="/capacitacionform/{{ p.id }}" routerLinkActive="active">Edit</a></span>
-    <span><button (click)="delete(p.id)">Delete</button></span>
-  </div>
+    </thead>
+    <tbody>
+          <tr class="table">
+              <th scope="row">{{ p.id }}</th>
+              <td>{{ p.costo }}</td>
+              <td>{{ p.entidad }}</td>
+              <td>{{ p.fecha }}</td>
+              <td>{{ p.horas_y_credito }}</td>
+              <td>{{ p.lugar }}</td>
+              <td>{{ p.tipo_de_evento }}</td>
+              <td>{{ p.egresadoID }}</td>
+              <td>{{ p.PK_Egresado }}</td>
+              <td><a routerLink="/capacitacionform/{{ p.id }}" routerLinkActive="active">Edit</a></td>
+              <td><button type="button" (click)="delete(p.id)" class="btn btn-danger">Delete</button></td>
+            </tr>
+    </tbody>    
+  </table> 

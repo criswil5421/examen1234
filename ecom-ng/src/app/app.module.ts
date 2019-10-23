@@ -32,9 +32,11 @@ const appRoutes: Routes = [
 
   { path: 'capacitacionindex',  component: CapacitacionIndexComponent },
   { path: 'capacitacionform',  component: CapacitacionFormComponent },
-  { path: 'capacitacion/id',  component: CapacitacionFormComponent },
+  { path: 'capacitacionform/:id',  component: CapacitacionFormComponent },
 
   { path: 'egresadoindex',  component: EgresadoIndexComponent },
+  { path: 'egresadoform',  component: EgresadoFormComponent },
+  { path: 'egresadoform/:id',  component: EgresadoFormComponent },
 
   { path: '**', component: PageNotFoundComponent },
 

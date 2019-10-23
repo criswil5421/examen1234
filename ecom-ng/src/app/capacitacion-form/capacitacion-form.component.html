@@ -1,46 +1,44 @@
 
 <form [formGroup]="capacitacionForm" (ngSubmit)="save()">
 
-    <label>
-        costo:
-        <input type="text" formControlName="costo" name="costo" id="costo" required>
-        <div [hidden]="capacitacionForm.get('costo').valid || 
-        capacitacionForm.get('costo').pristine" class="alert alert-danger">
-            Titulo is required
-        </div>
-    </label>
-    <br>
-    <label>
-        entidad:
-        <input type="text" formControlName="entidad" name="entidad" id="entidad" required>
-    </label>
-    <br>
-    <label>
-        fecha:
-        <input type="text" formControlName="fecha" name="fecha" id="fecha" required>
-    </label>
-    <br>
-    <label>
-        lugar:
-        <input type="text" formControlName="lugar" name="lugar" id="lugar" required>
-    </label>
-    <label>
-        tipo_de_evento:
-        <input type="text" formControlName="tipo_de_evento" name="tipo_de_evento" id="tipo_de_evento" required>
-    </label>
-    <label>
-        id:
-        <input type="text" formControlName="id" name="id" id="id" required>
-    </label>
-    <label>
-        egresadoID:
-        <input type="text" formControlName="egresadoID" name="egresadoID" id="egresadoID" required>
-    </label>
-    <label>
-        PK_Egresado:
-        <input type="text" formControlName="PK_Egresado" name="PK_Egresado" id="PK_Egresado" required>
-    </label>
-    <br>
-    <button type="submit" [disabled]="!capacitacionForm.valid">Save</button>
+    <fieldset>
+            <div class="form-group">
+                    <label for="exampleInputPassword1">costo</label>
+                    <input type="text" formControlName="costo" name="costo" id="costo" class="form-control" placeholder="ejemplo: 60.00" required>
+            </div>
+            <div class="form-group">
+                    <label for="exampleInputPassword1">entidad</label>
+                    <input type="text" formControlName="entidad" name="entidad" id="entidad" class="form-control" placeholder="ejemplo: empresa" required>
+            </div>
+            <div class="form-group">
+                    <label for="exampleInputPassword1">fecha</label>
+                    <input type="date" formControlName="fecha" name="fecha" id="fecha" class="form-control" required>
+            </div>
+            <div class="form-group">
+                    <label for="exampleInputPassword1">lugar</label>
+                    <input type="text" formControlName="lugar" name="lugar" id="lugar" class="form-control" placeholder="ejemplo: 60.00" required>
+            </div>
+            <div class="form-group">
+                    <label for="exampleInputPassword1">tipo_de_evento</label>
+                    <input type="text" formControlName="tipo_de_evento" name="tipo_de_evento" id="tipo_de_evento" class="form-control" placeholder="ejemplo: 60.00" required>
+            </div>
+            <div class="form-group">
+                    <label for="exampleInputPassword1">id</label>
+                    <input type="text" formControlName="id" name="id" id="id" class="form-control" placeholder="ejemplo: 60.00" required>
+            </div>
+            <div class="form-group">
+                    <label for="exampleInputPassword1">egresadoID</label>
+                    <input type="text" formControlName="egresadoID" name="egresadoID" id="egresadoID" class="form-control" placeholder="ejemplo: 60.00" required>
+            </div>
+            <div class="form-group">
+                    <label for="exampleInputPassword1">PK_Egresado</label>
+                    <input type="text" formControlName="PK_Egresado" name="PK_Egresado" id="PK_Egresado" class="form-control" placeholder="ejemplo: 60.00" required>
+            </div>
+    </fieldset>
+
+    <button type="submit" [disabled]="!capacitacionForm">Save</button>
+
+    <p>{{ capacitacionForm.value | json }}</p>
 </form>
-<p>{{ capacitacionForm.value | json }}</p>
+
+

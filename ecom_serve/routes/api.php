@@ -34,7 +34,7 @@ Route::put('egresado/{id}', 'EgresadoController@update');
 Route::delete('egresado/{id}', 'EgresadoController@destroy');
 
 Route::get('capacitacion', 'CapacitacionController@index');
-Route::get('capacitacion/{capacitacionID}', 'CapacitacionController@show');
+Route::get('capacitacion/{id}', 'CapacitacionController@show');
 Route::post('capacitacion', 'CapacitacionController@create');
 Route::put('capacitacion/{id}', 'CapacitacionController@update');
 Route::delete('capacitacion/{id}', 'CapacitacionController@destroy');

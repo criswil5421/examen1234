@@ -26,4 +26,4 @@ Route::get('egresado/index',"EgresadoController@index");
 Route::get('egresado/show/{id}',"EgresadoController@show");
 
 Route::get('capacitacion/index',"CapacitacionController@index");
-Route::get('capacitacion/show/{capacitacionID}',"CapacitacionController@show");
+Route::get('capacitacion/show/{id}',"CapacitacionController@show");
