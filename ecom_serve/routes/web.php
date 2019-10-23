@@ -21,3 +21,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('cliente/index',"ClienteController@index");
 Route::get('cliente/show/{id}',"ClienteController@show");
+
+Route::get('egresado/index',"EgresadoController@index");
+Route::get('egresado/show/{id}',"EgresadoController@show");
+
+Route::get('capacitacion/index',"CapacitacionController@index");
+Route::get('capacitacion/show/{capacitacionID}',"CapacitacionController@show");

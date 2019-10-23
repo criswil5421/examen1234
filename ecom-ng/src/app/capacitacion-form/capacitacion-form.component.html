@@ -1,0 +1,46 @@
+
+<form [formGroup]="capacitacionForm" (ngSubmit)="save()">
+
+    <label>
+        costo:
+        <input type="text" formControlName="costo" name="costo" id="costo" required>
+        <div [hidden]="capacitacionForm.get('costo').valid || 
+        capacitacionForm.get('costo').pristine" class="alert alert-danger">
+            Titulo is required
+        </div>
+    </label>
+    <br>
+    <label>
+        entidad:
+        <input type="text" formControlName="entidad" name="entidad" id="entidad" required>
+    </label>
+    <br>
+    <label>
+        fecha:
+        <input type="text" formControlName="fecha" name="fecha" id="fecha" required>
+    </label>
+    <br>
+    <label>
+        lugar:
+        <input type="text" formControlName="lugar" name="lugar" id="lugar" required>
+    </label>
+    <label>
+        tipo_de_evento:
+        <input type="text" formControlName="tipo_de_evento" name="tipo_de_evento" id="tipo_de_evento" required>
+    </label>
+    <label>
+        id:
+        <input type="text" formControlName="id" name="id" id="id" required>
+    </label>
+    <label>
+        egresadoID:
+        <input type="text" formControlName="egresadoID" name="egresadoID" id="egresadoID" required>
+    </label>
+    <label>
+        PK_Egresado:
+        <input type="text" formControlName="PK_Egresado" name="PK_Egresado" id="PK_Egresado" required>
+    </label>
+    <br>
+    <button type="submit" [disabled]="!capacitacionForm.valid">Save</button>
+</form>
+<p>{{ capacitacionForm.value | json }}</p>

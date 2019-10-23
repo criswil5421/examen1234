@@ -1,0 +1,12 @@
+<p>capacitacion-index works!</p>
+<nav>
+        <a routerLink="/capacitacionform" routerLinkActive="active">New Cliente</a> <br>
+      
+      </nav>
+<div *ngFor="let p of list">
+
+    <span>{{ p.costo }}</span>
+    <span>{{ p.entidad }}</span>
+    <span><a routerLink="/capacitacionform/{{ p.id }}" routerLinkActive="active">Edit</a></span>
+    <span><button (click)="delete(p.id)">Delete</button></span>
+  </div>

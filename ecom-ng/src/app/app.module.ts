@@ -14,6 +14,10 @@ import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { ClienteIndexComponent } from './cliente-index/cliente-index.component';
 import { ClienteFormComponent } from './cliente-form/cliente-form.component';
+import { CapacitacionIndexComponent } from './capacitacion-index/capacitacion-index.component';
+import { EgresadoIndexComponent } from './egresado-index/egresado-index.component';
+import { CapacitacionFormComponent } from './capacitacion-form/capacitacion-form.component';
+import { EgresadoFormComponent } from './egresado-form/egresado-form.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -25,6 +29,12 @@ const appRoutes: Routes = [
   { path: 'clienteindex',  component: ClienteIndexComponent },
   { path: 'clienteform',  component: ClienteFormComponent },
   { path: 'clienteform/:id',  component: ClienteFormComponent },
+
+  { path: 'capacitacionindex',  component: CapacitacionIndexComponent },
+  { path: 'capacitacionform',  component: CapacitacionFormComponent },
+  { path: 'capacitacion/id',  component: CapacitacionFormComponent },
+
+  { path: 'egresadoindex',  component: EgresadoIndexComponent },
 
   { path: '**', component: PageNotFoundComponent },
 
@@ -40,7 +50,11 @@ const appRoutes: Routes = [
     CartComponent,
     ShippingComponent,
     ClienteIndexComponent,
-    ClienteFormComponent
+    ClienteFormComponent,
+    CapacitacionIndexComponent,
+    EgresadoIndexComponent,
+    CapacitacionFormComponent,
+    EgresadoFormComponent
   ],
   imports: [
     BrowserModule,

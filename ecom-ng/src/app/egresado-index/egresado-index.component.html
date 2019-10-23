@@ -1,0 +1,10 @@
+<p>egresado-index works!</p>
+
+
+<div *ngFor="let e of list">
+
+        <span>{{ e.fecha_egreso }}</span>
+        <span>{{ e.id }}</span>
+    
+        <span><button (click)="delete(e.id)">Delete</button></span>
+      </div>
