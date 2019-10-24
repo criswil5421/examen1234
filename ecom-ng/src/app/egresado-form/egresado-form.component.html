@@ -14,8 +14,9 @@
                         <input type="date" formControlName="fecha_ingreso" name="fecha_ingreso" id="fecha_ingreso" class="form-control"  required>
                 </div>
         </fieldset>
+        <div class="save1">
+                <button type="submit" [disabled]="!egresadoForm.valid" class="btn btn-outline-primary">guardar</button>
+        </div>
     
-        <button type="submit" [disabled]="!egresadoForm">Save</button>
-    
-        <p>{{ egresadoForm.value | json }}</p>
+        <!--<p>{{ egresadoForm.value | json }}</p>-->
     </form>

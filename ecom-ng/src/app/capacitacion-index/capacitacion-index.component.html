@@ -9,7 +9,7 @@
         <th scope="col">COSTO</th>
         <th scope="col">ENTIDAD</th>
         <th scope="col">FECHA</th>
-        <th scope="col">HORAS Y CREDITOS</th>
+        <th scope="col">HORAS Y CREDITO</th>
         <th scope="col">LUGAR</th>
         <th scope="col">TIPO DE EVENTO</th>
         <th scope="col">EGRESADO ID</th>
@@ -28,7 +28,7 @@
               <td>{{ p.tipo_de_evento }}</td>
               <td>{{ p.egresadoID }}</td>
               <td>{{ p.PK_Egresado }}</td>
-              <td><a routerLink="/capacitacionform/{{ p.id }}" routerLinkActive="active">Edit</a></td>
+              <td><button type="button" routerLink="/capacitacionform/{{ p.id }}" routerLinkActive="active" class="btn btn-outline-info">Edit</button></td>
               <td><button type="button" (click)="delete(p.id)" class="btn btn-danger">Delete</button></td>
             </tr>
     </tbody>    

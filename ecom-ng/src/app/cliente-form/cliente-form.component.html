@@ -27,6 +27,6 @@
         <input type="text" formControlName="direccion" name="direccion" id="direccion" required>
     </label>
     <br>
-    <button type="submit" [disabled]="!clienteForm">Save</button>
+    <button type="submit" [disabled]="!clienteForm.valid">Save</button>
 </form>
 <p>{{ clienteForm.value | json }}</p>

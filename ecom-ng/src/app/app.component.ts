@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ecom-ng2';
-  username= 'Angel Sullon';
+  username= 'cris';
 }
